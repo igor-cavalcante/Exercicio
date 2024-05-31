@@ -22,7 +22,7 @@ document.getElementById('themeButton').onclick = toggleTheme;
 document.addEventListener("DOMContentLoaded", () => {
     const circularProgressBar = document.querySelector("#circularProgressBar");
     const circularProgressBarNumber = document.querySelector("#circularProgressBar .progress-value");
-    const audio = new Audio('Alarm.mp3');
+    // const audio = new Audio('Alarm.mp3');
 
     const pomodoroTimerInSeconds = 1;
     const TIMER_TYPE_POMODORO = 'POMODORO';
