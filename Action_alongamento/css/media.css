@@ -1,0 +1,261 @@
+
+
+
+/* Small screens*/
+@media only screen and (max-width: 719px) {
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+
+ 
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+        z-index: 999;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .navbar-nav i {
+        margin: 0;
+    }
+
+    .nav-link {
+        justify-content: center;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    #header{
+        margin: 2rem;
+    }
+   
+    #action-bar{
+        margin-top: 3rem;
+    }
+    
+    #header{
+        width: 80%;
+        font-size: small;
+    }
+
+    #exercicios-img{
+        max-height: 25rem;
+    }
+
+    #exercicio-imagem{
+        max-width: 27rem;
+    }
+
+    #action-bar{
+        margin-top: 0;
+ 
+    }
+
+    
+
+}
+
+    /* Extra small screens */
+    @media screen and (max-width: 375px){
+        
+        #exercicios-img {
+            height: 24rem;
+            max-height: 18rem;
+          }
+
+        #action-bar{
+            margin-top: 0;
+     
+        }
+
+        #header{
+            width: 80%;
+            font-size: small;
+        }
+
+
+        #exercicio-imagem{
+            max-width: 15rem;
+        }
+
+        .progress-bar{
+            width: 0%;
+            height: 0%;
+            background-color: var(--bg-secondary);
+        }
+    
+        .progress-bar-inner {
+            width: 70%;
+            height: 70%;
+        }
+       
+
+
+        
+        }
+    /* Tablet screens */
+@media only screen and (min-width: 720px){
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navbar {
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+
+    .navbar:hover {
+        width: 16rem;
+    }
+
+    .navbar:hover .link-text {
+        display: inline;
+    }
+
+    .navbar:hover .logo-text {
+        left: 0px;
+    }
+
+
+    
+    #exercicios-img {
+        height: 40rem;
+      }
+
+    #exercicio-imagem{
+        max-width: 27rem;
+    }
+
+    #action-bar{
+        margin-top: 10;
+    }
+
+    #action-bar i{
+        font-size: 300%;
+    }
+
+    #action-bar .fa-pause-play{
+        font-size: 500%;
+    }
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Laptop Screens*/
+@media only screen and (min-width: 1025px) {
+    .navbar {
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+
+    .navbar:hover {
+        width: 16rem;
+    }
+
+    .navbar:hover .link-text {
+        display: inline;
+    }
+
+    .navbar:hover .logo-text {
+        left: 0px;
+    }
+
+
+    body::-webkit-scrollbar {
+        width: 0.25rem;
+    }
+
+    body::-webkit-scrollbar-track {
+        background: #1e1e24;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background: var(--special);
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 1025px){
+    #container{
+        flex-direction: column;
+        align-content: start;
+    }
+
+   #header{
+    height: 6rem;
+    margin-top: 5rem;
+    
+   }
+
+   #header h1{
+    font-size: 3rem;
+    color: var(--text-primary);
+    margin-bottom: 0;
+    
+   }
+
+   #exercicios-img {
+    height: 40rem;
+    width: 25rem;
+  }
+   
+  #exercicios-img img {
+    height: 40rem;
+    width: 25rem;
+  }
+  
+  #action-bar{
+    margin-top: 1rem;
+    height: 12rem;
+    width: 90vw;
+    text-align: center;
+    /* z-index: -1; */
+  }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

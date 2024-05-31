@@ -1,0 +1,246 @@
+/* Global styles */
+* {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg-secondary);
+}
+
+
+
+/* HEADER */
+#header {
+  text-align: center;
+  color: var(--special);
+  margin-top: 20px;
+}
+
+
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+}
+
+#exercicios-img {
+  display: flex; 
+  width: 100vw;
+  height: 30rem;
+  border-radius: 5rem;
+  background-color: var(--bg-primary);
+  justify-content: center;
+  align-items: center; 
+  border: 1px solid var(--special);
+  
+}
+
+#exercicios-img img{
+  margin-bottom: 5rem;
+}
+#exercicio-imagem{
+  max-width: 20rem;
+  max-height: 50rem;
+  transition: opacity 0.7s ease-in-out;
+
+}
+/* TIMER */
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.progress-bar {
+  height: 180px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: conic-gradient(var(--special) 360deg, var(--bg-primary) 0deg);
+  border-radius: 50%;
+  animation: pulse 3s infinite;
+  transition: all ease;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.progress-bar-inner {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-primary);
+  border-radius: 50%;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.progress-bar-inner h2 {
+  color: var(--special);
+  font-weight: 900;
+  font-size: 40px;
+}
+
+
+
+
+
+/* BARRA DE AÇÕES  */
+
+#action-bar{
+  margin-top: 7rem;
+  height: 12rem;
+  width: 90vw;
+  text-align: center;
+  /* z-index: -1; */
+}
+
+#action-bar i{
+  font-size: 3rem;
+  margin: 1.5rem;
+  cursor: pointer;
+  color: var(--text-primary);
+  
+} 
+
+#action-bar i:hover{
+  color: var(--special);
+  transition: 0.5s;
+  
+}
+
+.fa-pause-play {
+  font-size: 4rem;
+}
+
+
+
+
+
+/* MODAL DE FINALIZAÇÃO */
+
+#completion-fade, #completion-modal {
+  display: none;
+}
+
+.fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  max-width: 90%;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  z-index: 10;
+  justify-content: center;
+  text-align: center;
+}
+
+.fade,
+.modal {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal h2{
+  color: var(--special);
+  margin: 0.5rem;
+}
+
+
+#btn-voltar{
+  font-size: 1.2rem;
+  margin: 2rem;
+  height: 35%;
+  width: 45%;
+  background-color: var(--special);
+  color: var(--text-secondary);
+  font-family: 'Poppins';
+
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+
+#btn-voltar:hover{
+  background-color: #3aaa96;
+  height: 40%;
+  width: 50%;
+  transition: 0.5s;
+ 
+}
+
+
+
+.dark {
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --bg-third: #23232e;
+  --special: #49DBC1;
+}
+
+.light {
+  --text-primary: #1f1f1f;
+  --text-secondary: #000000;
+  --text-tertiary: #d0cdd3;
+  --bg-primary: #ffffff;
+  --bg-secondary: #e4e4e4;
+  --bg-third: #ffffff;
+  --special: #49DBC1;
+}
+
+.theme-icon {
+  display: none;
+}
+
+.dark #darkIcon {
+  display: block;
+}
+
+.light #lightIcon {
+  display: block;
+}

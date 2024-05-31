@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seu Exercício</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="logo">
+        <a href="#" class="nav-link">
+          <span class="link-text logo-text">Projeto X</span>
+
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="fa-solid fa-location-dot"></i>
+          <span class="link-text">Consultar</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="fa-solid fa-person-running"></i>
+          <span class="link-text">Exercícios</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="fa-regular fa-file"></i>
+          <span class="link-text">Tarefas</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="fa-solid fa-calculator"></i>
+          <span class="link-text">Calculadora IMC</span>
+        </a>
+      </li>
+
+      <li class="nav-item" id="themeButton">
+        <a href="#" class="nav-link">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+          <span class="link-text">Temas</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <main id="container">
+    <div id="header">
+      <h1 id="exercicio-title">Exercicio X/Y</h1>
+    </div>
+
+    <div id="exercicios-img">
+      <img id="exercicio-imagem" src="assets/sentadoextenderpernaepe2.png" alt="exercicio">
+      <div class="exercicios-legenda">
+
+      </div>
+    </div>
+
+    <div id="cronometro">
+      <div class="cronometro-header">
+
+      </div>
+      <div class="card-body">
+
+        <div id="circularProgressBar" class="progress-bar">
+          <div class="progress-bar-inner">
+            <h2 class="progress-value">00:30</h2>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div id="action-bar">
+      <i class="fa-solid fa-chevron-left" id="previous-exercise"></i>
+      <i class="fa-solid fa-pause" id="pause-play"></i>
+      <i class="fa-solid fa-chevron-right" id="next-exercise"></i>
+    </div>
+    <div id="completion-fade" class="fade"></div>
+    <div id="completion-modal" class="modal">
+        <div class="modal-content">
+            <h2>Parabéns!</h2>
+            <p>Você terminou seu exercício hoje.</p>
+            <button id="btn-voltar">Voltar</button>
+        </div>
+
+  </main>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
