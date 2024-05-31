@@ -28,7 +28,7 @@ const themeMap = {
   
     exercicioDivs.forEach(div => {
       div.addEventListener('click', () => {
-        window.location.href = '../Preview_alongamento/index.html';
+        window.location.href = './Preview_alongamento/index.html';
       });
     });
   });
@@ -39,7 +39,7 @@ const themeMap = {
   
     exercicioDivs.forEach(div => {
       div.addEventListener('click', () => {
-        window.location.href = '../Preview_condicionamento/index.html';
+        window.location.href = './Preview_condicionamento/index.html';
       });
     });
   });
@@ -49,7 +49,7 @@ const themeMap = {
   
     exercicioDivs.forEach(div => {
       div.addEventListener('click', () => {
-        window.location.href = '../Planos/index.html';
+        window.location.href = './index.html';
       });
     });
   });
